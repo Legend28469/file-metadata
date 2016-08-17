@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Image Search Abstraction Layer</title>
+    <title>File Metadata Microservice</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 </head>
 <body>
@@ -14,7 +13,12 @@
             <h3>This is a service which returns the metadata of a file uploaded</h3>
             <br />
             <div class="well">
-                Upload UI will go here
+                <form class="form-inline" role="form" method="post" action="/upload" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <input type="file" name="file" class="form-control" />
+                        <button type="submit" class="btn btn-default">Upload</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
